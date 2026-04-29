@@ -1,0 +1,66 @@
+export const CATEGORIES = {
+  Food: { icon: "🍜", color: "#E8825A" },
+  Transport: { icon: "🚇", color: "#5A8EE8" },
+  Shopping: { icon: "🛍️", color: "#A85AE8" },
+  Health: { icon: "💊", color: "#5AE8A8" },
+  Entertainment: { icon: "🎬", color: "#E8C85A" },
+  Utilities: { icon: "⚡", color: "#5AC8E8" },
+  Salary: { icon: "💼", color: "#5AE870" },
+  Freelance: { icon: "💻", color: "#E85A8E" },
+  Investment: { icon: "📈", color: "#8EE85A" },
+  Rent: { icon: "🏠", color: "#E8705A" },
+};
+
+export const generateTransactions = () => {
+  const now = new Date();
+  const txns = [
+    { id: 1, date: "2025-03-01", description: "Monthly Salary", category: "Salary", amount: 85000, type: "income" },
+    { id: 2, date: "2025-03-02", description: "Apartment Rent", category: "Rent", amount: -22000, type: "expense" },
+    { id: 3, date: "2025-03-03", description: "Swiggy Order", category: "Food", amount: -840, type: "expense" },
+    { id: 4, date: "2025-03-04", description: "Metro Card Recharge", category: "Transport", amount: -500, type: "expense" },
+    { id: 5, date: "2025-03-05", description: "Freelance Project", category: "Freelance", amount: 18000, type: "income" },
+    { id: 6, date: "2025-03-06", description: "Zomato Delivery", category: "Food", amount: -620, type: "expense" },
+    { id: 7, date: "2025-03-07", description: "Amazon Shopping", category: "Shopping", amount: -3200, type: "expense" },
+    { id: 8, date: "2025-03-08", description: "Gym Membership", category: "Health", amount: -2500, type: "expense" },
+    { id: 9, date: "2025-03-09", description: "Netflix Subscription", category: "Entertainment", amount: -649, type: "expense" },
+    { id: 10, date: "2025-03-10", description: "Electricity Bill", category: "Utilities", amount: -1800, type: "expense" },
+    { id: 11, date: "2025-03-11", description: "Restaurant Dinner", category: "Food", amount: -2100, type: "expense" },
+    { id: 12, date: "2025-03-12", description: "Ola Ride", category: "Transport", amount: -340, type: "expense" },
+    { id: 13, date: "2025-03-13", description: "Mutual Fund Return", category: "Investment", amount: 4200, type: "income" },
+    { id: 14, date: "2025-03-15", description: "Myntra Purchase", category: "Shopping", amount: -1850, type: "expense" },
+    { id: 15, date: "2025-03-17", description: "Doctor Visit", category: "Health", amount: -900, type: "expense" },
+    { id: 16, date: "2025-03-18", description: "Movie Tickets", category: "Entertainment", amount: -800, type: "expense" },
+    { id: 17, date: "2025-03-20", description: "Grocery Store", category: "Food", amount: -3400, type: "expense" },
+    { id: 18, date: "2025-03-22", description: "Rapido Bike", category: "Transport", amount: -120, type: "expense" },
+    { id: 19, date: "2025-03-24", description: "Internet Bill", category: "Utilities", amount: -999, type: "expense" },
+    { id: 20, date: "2025-03-26", description: "Freelance Design", category: "Freelance", amount: 12000, type: "income" },
+    { id: 21, date: "2025-03-28", description: "Sports Equipment", category: "Shopping", amount: -2800, type: "expense" },
+    { id: 22, date: "2025-03-30", description: "Spotify Premium", category: "Entertainment", amount: -119, type: "expense" },
+    { id: 23, date: "2025-02-01", description: "Monthly Salary", category: "Salary", amount: 85000, type: "income" },
+    { id: 24, date: "2025-02-02", description: "Apartment Rent", category: "Rent", amount: -22000, type: "expense" },
+    { id: 25, date: "2025-02-05", description: "Swiggy Order", category: "Food", amount: -760, type: "expense" },
+    { id: 26, date: "2025-02-08", description: "Bus Pass", category: "Transport", amount: -600, type: "expense" },
+    { id: 27, date: "2025-02-10", description: "Freelance Work", category: "Freelance", amount: 9500, type: "income" },
+    { id: 28, date: "2025-02-14", description: "Valentine Dinner", category: "Food", amount: -3200, type: "expense" },
+    { id: 29, date: "2025-02-15", description: "Amazon Purchase", category: "Shopping", amount: -4100, type: "expense" },
+    { id: 30, date: "2025-02-20", description: "Water Bill", category: "Utilities", amount: -450, type: "expense" },
+    { id: 31, date: "2025-02-22", description: "Investment Dividend", category: "Investment", amount: 2800, type: "income" },
+    { id: 32, date: "2025-02-25", description: "Medicine", category: "Health", amount: -540, type: "expense" },
+    { id: 33, date: "2025-01-01", description: "Monthly Salary", category: "Salary", amount: 85000, type: "income" },
+    { id: 34, date: "2025-01-03", description: "Apartment Rent", category: "Rent", amount: -22000, type: "expense" },
+    { id: 35, date: "2025-01-05", description: "New Year Shopping", category: "Shopping", amount: -6200, type: "expense" },
+    { id: 36, date: "2025-01-10", description: "Freelance Project", category: "Freelance", amount: 15000, type: "income" },
+    { id: 37, date: "2025-01-15", description: "Restaurant", category: "Food", amount: -1800, type: "expense" },
+    { id: 38, date: "2025-01-20", description: "Electricity", category: "Utilities", amount: -2200, type: "expense" },
+  ];
+  return txns;
+};
+
+export const monthlyData = [
+  { month: "Oct", income: 95000, expenses: 48000 },
+  { month: "Nov", income: 88000, expenses: 52000 },
+  { month: "Dec", income: 102000, expenses: 68000 },
+  { month: "Jan", income: 100000, expenses: 55000 },
+  { month: "Feb", income: 97300, expenses: 48650 },
+  { month: "Mar", income: 119200, expenses: 44536 },
+];
