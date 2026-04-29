@@ -203,8 +203,8 @@ Built as part of a frontend evaluation project to demonstrate UI, state manageme
 
 ## 👨‍💻 Author
 
-Aritra Das  
-https://github.com/Aritrraa
+Satyam Sanjeev  
+www.linkedin.com/in/satyam-sanjeev-7ba93a376 - LInkedin
 
 ---
 
